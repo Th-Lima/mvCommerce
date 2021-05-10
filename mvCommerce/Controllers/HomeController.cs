@@ -86,9 +86,9 @@ namespace mvCommerce.Controllers
                     ViewData["CONTACT"] = contact;
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                ViewData["MSG_E"] = "Oops! tivemos um erro, tente novamente mais tarde!";
+                ViewData["MSG_E"] = "Oops! tivemos um erro, tente novamente mais tarde!" + e.Message;
 
                 //TODO - Implement log
 

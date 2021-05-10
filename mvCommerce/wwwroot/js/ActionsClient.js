@@ -57,7 +57,8 @@ function CalculateActionBtn() {
 }
 
 function AJAXCalculateFreight(callByButton) {
-    $(".btn-continue").addClass("disabled");
+    $(".btn-pay").addClass("disabled");
+    $(".select-freight").removeClass("text-hide");
     if (!callByButton) {
         if ($.cookie('cart.cep') != undefined) {
             $(".cep").val($.cookie('cart.cep'));

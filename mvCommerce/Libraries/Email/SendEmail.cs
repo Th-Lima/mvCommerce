@@ -45,6 +45,7 @@ namespace mvCommerce.Libraries.Email
             string bodyMsg = string.Format($"<h3>Colaborador CompraTudo</h3>" +
                 $"Olá {collaborator.Name}, " +
                 $" sua senha é: <h3>{collaborator.Password}</h3>" +
+                $"para acessar seu painel de colaborador, acesse a URL e faça seu login: https://localhost:44372/Collaborator/Home/Login",
                 $"Seja muito bem vindo a nossa empresa! :)");
 
             /*
